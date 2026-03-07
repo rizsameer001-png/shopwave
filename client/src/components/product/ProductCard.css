@@ -1,0 +1,24 @@
+.product-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.06); transition: all 0.25s; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+.product-card-image-wrap { position: relative; display: block; overflow: hidden; background: #f5f5f5; aspect-ratio: 1; }
+.product-card-image { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.product-card:hover .product-card-image { transform: scale(1.06); }
+.product-card-badges { position: absolute; top: 10px; left: 10px; display: flex; flex-direction: column; gap: 4px; }
+.badge-sale { background: var(--secondary); color: white; padding: 3px 8px; border-radius: 8px; font-size: 11px; font-weight: 700; }
+.badge-new { background: var(--accent); color: white; padding: 3px 8px; border-radius: 8px; font-size: 11px; font-weight: 700; }
+.badge-oos { background: rgba(0,0,0,0.5); color: white; padding: 3px 8px; border-radius: 8px; font-size: 11px; font-weight: 700; }
+.wishlist-btn { position: absolute; top: 8px; right: 8px; background: white; border: none; border-radius: 50%; width: 34px; height: 34px; cursor: pointer; font-size: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; transition: transform 0.2s; }
+.wishlist-btn:hover { transform: scale(1.15); }
+.product-card-body { padding: 14px; }
+.product-brand { font-size: 11px; color: #999; font-weight: 500; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+.product-name { display: block; font-size: 14px; font-weight: 600; color: #2d2d2d; text-decoration: none; line-height: 1.4; margin-bottom: 6px; height: 2.8em; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.product-name:hover { color: var(--primary); }
+.product-rating { color: #f5a623; font-size: 12px; margin-bottom: 8px; }
+.product-rating span { color: #999; font-size: 11px; margin-left: 4px; }
+.product-price-row { display: flex; align-items: center; justify-content: space-between; }
+.product-prices { display: flex; flex-direction: column; }
+.price-current { font-size: 16px; font-weight: 800; color: var(--primary); }
+.price-original { font-size: 11px; color: #bbb; text-decoration: line-through; }
+.add-cart-btn { background: var(--primary); color: white; border: none; padding: 7px 14px; border-radius: 10px; font-size: 12px; font-weight: 700; cursor: pointer; transition: all 0.2s; font-family: 'Poppins',sans-serif; }
+.add-cart-btn:hover:not(:disabled) { background: #5a52e0; transform: scale(1.05); }
+.add-cart-btn:disabled { background: #ccc; cursor: not-allowed; }
